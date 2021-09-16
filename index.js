@@ -78,8 +78,10 @@ function branch(dir) {
   var head = fs.readFileSync(path.resolve(gitDir, 'HEAD'), 'utf8');
   var b = head.match(RE_BRANCH);
 
-  console.log(`head: ${head}`);
-  console.log(`b: ${b}`);
+  console.log('head');
+  console.log(head);
+  console.log('b');
+  console.log(b);
 
   if (b) {
     return b[1];
